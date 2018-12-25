@@ -1,0 +1,1073 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link href="../../../../themes/simpleboot3/public/style/css/iconfont.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../themes/simpleboot3/public/style/css/api.css"/>
+    <link href="../../../../themes/simpleboot3/public/style/css/Hui.css" rel="stylesheet" type="text/css" />
+    <script src="../../../../themes/simpleboot3/public/style/js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../../../themes/simpleboot3/public/style/js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../../../themes/simpleboot3/public/style/js/photoswipe.min.js"></script>
+    <script src="../../../../themes/simpleboot3/public/style/js/photoswipe-ui-default.min.js"></script>
+    <script src="../../../../themes/simpleboot3/public/style/js/assets/js/amazeui.js" type="text/javascript" charset="utf-8"></script>
+      <title>  </title>
+
+    <style type="text/css">
+        #contents p {
+            text-align: justify;
+        }
+
+        body {
+            min-height: 600px;
+            background-color: #f4f4f4;
+        }
+
+        .H-icon {
+        
+        }
+
+        .H-icon:nth-child(1) {
+            background-size: 18px;
+            /*background-image: url(../image/gg/chakan.png);*/
+        }
+
+        .H-icon:nth-child(3) {
+            background-size: 13px;
+            /*background-image: url(../image/gg/huifu.png);*/
+        }
+
+        #contents img {
+            width: 100%!important;
+        }
+        .H-header {
+            min-height: 45px;
+        }
+        .H-header-title, .H-header .H-icon {
+            height: 45px;
+        }
+        .H-theme-background-color4 {
+            background-color: #C7C7C7;
+        }
+        .H-theme-background-color4-active {
+            background-color: #FFFFFF;
+        }
+        html,body{
+            -webkit-user-select:text;
+        }
+     
+        .am-header-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1010;
+        }
+   
+
+
+    </style>
+     
+</head>
+<body>
+<header class="H-theme-background-color9 H-header am-header-fixed" style="min-height:40px;" >
+        <div  onclick="clickUser()">
+            <div  id="appName" class="H-header-title H-center-all H-font-size-18 H-text-show-row-1 H-theme-font-color-white H-position-absolute H-width-100-percent H-font-weight-bold" style="height:40px;">APP下载见抖音主页</div>
+
+            <i class="Hui-iconfont Hui-iconfont-avatar2" style="width:50px;color:white;float:right;font-size:26px"></i>
+
+        </div>
+
+    </header>
+    <div class="H-header" style="min-height:40px;"></div>
+<header class="H-header H-theme-background-color10 " id="header" >
+    <div class="H-header-title H-flexbox-horizontal H-vertical-middle H-font-size-18 H-text-show-row-1 H-theme-font-color-white H-position-absolute H-width-100-percent">
+        <div  class="H-header-search H-flex-item H-margin-horizontal-both-10 H-padding-horizontal-both-10 H-position-relative H-theme-background-color-white H-border-radius-3 H-line-height-normal">
+            <input type="text" name="keyword" placeholder="请输入关键字搜索聊天话术" id="H-header-search-text" class="H-width-100-percent H-box-sizing-border-box H-border-none H-padding-horizontal-both-10 H-font-size-14 H-padding-vertical-both-8  H-theme-font-color-black H-vertical-middle">
+        </div>
+        <span tapmode="" onclick="sousuo()" class="H-icon H-position-relative H-display-inline-block H-vertical-middle H-theme-font-color-white H-padding-horizontal-right-10 H-z-index-100">
+					<div class="Hui-iconfont Hui-iconfont-search1"></div>
+				</span>
+    </div>
+</header>
+
+<div class="H-channel-title H-flexbox-horizontal H-theme-background-color-white H-vertical-middle H-border-vertical-bottom-after">
+    <div id="beizhu" class="H-channel-text  H-flex-item H-font-size-12 H-theme-font-color-gray H-padding-10 H-margin-horizontal-right-10 H-text-show-row-1">一款优秀的话术搜索代聊软件，请长按话术复制聊天</div>
+</div>
+<div id="List" class="">
+
+			
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">男：我身边好多损友，不过也有那种特 2 的</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "女：哈哈，也不能全是损友吧？ <br>男：给你说一个我的 2B 朋友吧，他人挺不错，但就爱占点儿小便宜。比如超市搞促销，试吃什么的，必定有他。 <br>女：哈哈，然后呢？ <br>男：有一次吧，我和他去超市，他一如既往的挤进一活动现场。促销小姐就问“您好。有什么可以帮您的”他说：“我是来参加试吃的”。促销小姐：“不好意思，我们是促销猪饲料的。”我在一旁当时就笑喷了 <br>女：哈哈哈。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">聊情感经历惯例2：</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "女：你喜欢什么样的女生？  <br>男：我曾经喜欢过一个学医的 女孩。----女：学医的不错啊。 <br>男：一天偶然和她上了一节课，那天老师不知抽什么风，开始讲如何下药让丈夫不明原因猝死，有半年的吃法，一年的吃法，十年的吃法，看着她认真的做着笔记，当时我认真考虑了下，我和她还是比较适合做朋友。 <br>女：哈哈哈 。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">自恋惯例</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "男：感觉心里慌慌的。   ----女：怎么了？ <br>男：刚才路过一家超市，超市的门卫几个阿姨对我指指点点的，好像在谋划什么。 <br>女：你买了东西没给钱？ <br>男：没有，我都不认识她们。 <br>女：你没听到她们在说什么？ <br>男：我悄悄听了一下，她们好像是在说：快拉住那个帅哥，别让他跑了，你家闺女都到了出嫁的年纪了，我看他就不错...... 女:哈哈，太不要脸了......"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">吵架躺枪惯例(性元素植入1）</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "*男：尼玛，快被无辜死了。  ----女：怎么了？ <br>男：刚坐坐地铁，旁边坐了个大妈手机响了，大妈接起后听谈话内容好像是两口子在吵架，最后大妈被问烦了直接就说：我车子坏了，在地铁上那，找了个鸭，打算去开房！ <br>女：哈哈，然后呢？ <br>男：车厢里一片寂静，我瞥了大妈一眼，回过头来发现大家都在看着我！ <br>女：哈哈哈，秒懂。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">基情躺枪惯例(性元素植入2）</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "男：你知道什么是猪一样的队友么 <br>女：不知道，是什么？ <br>男：上次和同事出差，住在天津很有名的水晶宫饭店，为了省钱合租了一间房。同事贪小便宜，把 tt 装包带走了。退房时才知道，这么高档的宾馆，TT 竟然是收费的。 <br>女：哈哈，然后呢？ <br>男：然后俩大老爷们儿，就在前台交 TT 费咯，那个女服务员的表情我一辈子也忘不了。 <br>女：哈哈哈，你真逗。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">聊工作惯例1：</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "男： 我们办公室都是人才。 ----女：又发生什么事了？ <br>男：今天下午老王在办公室老是放响屁，同事忍不住说：“你能不能不出声？”然后便见他坐在那摇来晃去抖个不停。同事问：“干什么？”另一个同事接话说：“他调成振动的了。” <br>女：我靠，醉了，哈哈哈。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">聊工作惯例2：</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "男：我有一个朋友，女的。进了一个外企，然后她们老板长得特帅。她就想啊，这种老板喜欢傻白甜，电视里都是这样写的。于是她就各种犯小错误，希望老板能注意她，帮助她。 <br>女：那她成功了么。 <br>男：成功了啊，一个月后，她还收到了老板的一封信。 <br>女：这演韩剧呢。 <br>男：这是中剧，信上写着辞退信。 <br>女：哈哈，这老板有良心。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">聊兴趣惯例（旅游）</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "男：有一次我和朋友去旅游，期间发生了件可别尴尬的事儿。<br>女：怎么了？----男：当地人喜欢拿童子尿煮鸡蛋，觉得童子尿干净、养生。 <br>女：哈哈，然后呢？ <br>男：嗯，然后还特别热情，就非要拿一颗给我朋友吃，我朋友就百般推辞咯。可是主人很是热情！没办法，他只好说：我不喜欢吃鸡蛋。你猜当地人说什么？ <br>女：说什么呢？ <br>男：当地人说，那行，那你喝点汤吧。 <br>女：哈哈哈"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">约会惯例：（曲解废物测试）</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "男：最近不是流行污么，刚看到一污段子，特别搞笑。<br>女：怎么搞笑了？ <br>男：一男的晚上陪女神散步，突然看见两只狗在嘿咻，女神看了一会儿，红着脸问男的：“你...你现在是不是也有这样的想法？”你猜男的说了什么。 <br>女：什么啊？ <br>男：那男的说“不不！”并急忙解释，“我对母狗才没兴趣呢。” <br>女：哈哈哈，好污。"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz1">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">男：今天我去献血了。</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">初聊互动</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 "*女：哇，高尚...... <br>男：但是我遇到个比我高尚一百倍的。----女：怎么了？ <br>男：人家护士说，献血，200CC 送一副修指甲的用具，400CC送个手表，然后有个排队的就问护士:"""1000CC 送什么?""" 护士淡定的说:"""送个棺材......""" <br>女：哈哈哈哈"					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+
+			<div tapmode=""  class="H-flexbox-horizontal H-theme-background-color-white H-border-vertical-bottom-after wz2">
+				<div class="H-flex-item H-margin-vertical-both-10 H-margin-10">
+					<div class="H-theme-font-color-999 H-font-size-14 H-text-horizontal-left H-vertical-middle H-box-sizing-border-box">
+						<span class="H-display-block H-flex-item H-text-align-left H-font-size-14"><span class="H-theme-font-color1">✱✱✱✱✱✱✱✱</span></span>
+						<span class="H-display-block H-flex-item H-text-align-right H-theme-font-color-999 H-font-size-12">✱✱✱✱✱✱✱✱</span>
+					</div>
+					<div  class="wz1wz H-theme-font-color-333 H-font-size-14 H-text-horizontal-left  H-text-show-row-2" style="width: 100%;">
+					 ✱✱✱✱✱✱✱✱✱请点击查看✱✱✱✱✱✱✱✱✱...
+					</div>
+
+				</div>
+			</div>
+			
+			
+		</div>
+		<div style="height:60px;"></div>
+<footer id="footer" class="H-footer H-flexbox-horizontal H-theme-background-color-white" style="position:fixed;bottom:0px;">
+        <div style="position:absolute;float:top; height:1px; width:100%;background-color: #eee"></div>
+        <div id="tab0" tapmode="" onclick="tab2(1)" class="H-flex-item H-center-all H-text-align-center H-touch-active swipe-item  H-theme-font-color_my_red">
+            <div>
+					<span class="H-icon H-display-block H-line-height-normal ">
+                        <div class="Hui-iconfont Hui-iconfont-leijipingjia H-font-size-22"></div>
+	                </span>
+                <strong id="footer1" class="H-font-size-14 H-display-block H-font-weight-normal H-line-height-normal">恋爱话术惯例</strong>
+            </div>
+        </div>
+        <div id="tab1" tapmode="" onclick="tab2(2)" class="H-flex-item H-center-all H-text-align-center H-theme-font-color-666 swipe-item H-position-relative">
+            <span id="weidu" class="H-badge H-display-none-important H-badge-null H-theme-background-color1 H-border-radius-circle H-position-absolute H-z-index-10" style="left:60%;top:5px;"></span>
+            <div>
+	                <span class="H-icon H-display-block H-line-height-normal">
+                        <div class="Hui-iconfont H-font-size-22 Hui-iconfont-tuwenxiangqing"></div>
+	                </span>
+                <strong id="footer2" class="H-font-size-14 H-display-block H-font-weight-normal H-line-height-normal">话术聊天实战</strong>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/plain" id="openWeiXin">
+			<div tapmode=""  class="H-flexbox-vertical H-theme-background-color-white  ">
+				<div  id="weixin" class="H-font-size-14 H-margin-vertical-both-10 H-margin-10 H-text-align-center H-border-vertical-bottom-after">
+									</div>
+				<div class=" H-text-align-center" onclick="openWeiXin()">
+					<div class=" H-margin-vertical-both-10 ">
+					<span class="H-border-radius-3 H-theme-background-color9 H-padding-3 H-theme-font-color-white">长按复制微信号，点此打开微信</span>
+					</div>
+				</div>
+				<div class=" H-text-align-center">
+					<span   class="H-font-size-12">
+		</span>
+				</div>
+				<div class=" H-text-align-center H-font-size-14 H-margin-horizontal-both-10">
+                <span class="H-border-radius-3 H-theme-background-color9 H-padding-3 H-theme-font-color-white">搜索功能为高级版所有，需要开通权限才可使用，详情请咨询发给你链接的导师..				</span>
+				</div>
+			</div>
+		</script>
+<script type="text/javascript">
+   
+
+   
+    function sousuo(){
+        so=$("#H-header-search-text").val();
+        window.location.href="/portal/search/index.html?keyword="+so;
+        
+    }
+
+    $(document).ready(function(){
+    	
+    	$(".wz1").click(function(){
+    		$(this).find(".wz1wz").toggleClass("H-text-show-row-2");
+    	})
+    	
+    	$(".wz2").click(function(){
+    		var openWeiXin=$("#openWeiXin").html();
+
+    		var index = layer.open({
+                            //skin: 'demo-class',
+                            type: 1,
+                            area: [$(window).width()*3/4+"px"],
+                            shadeClose: true, //点击遮罩关闭
+                            content: openWeiXin,
+                            offset: $(window).height()/3+"px"
+                        });
+
+    	})
+    })
+    
+
+    function openWeiXin(){
+        setTimeout("openW()",1000);
+        layer.msg('正在打开微信...');
+        var weixin = $('#weixin').text();
+        var weixinH = weixin.substring(weixin.indexOf(":")+1);
+    }
+    function openW(){
+        window.location.href="weixin://"
+    }
+    
+    function clickUser(){
+        window.location.href="/user/index/index.html";
+    }
+    
+    function tab2(i){
+    	if(i==1){
+    		parent.location.href="/portal/page/index/id/1.html";
+    	}
+    	else{
+    		parent.location.href="/portal/page/index/id/2.html";
+    	}
+    }
+
+</script>
+</body>
+</html>
+
